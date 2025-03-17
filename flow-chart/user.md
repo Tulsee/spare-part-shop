@@ -1,5 +1,5 @@
 # User
 
-User Registration
+## User Registration
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/user register.drawio.png" alt=""><figcaption></figcaption></figure>
