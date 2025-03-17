@@ -391,6 +391,8 @@ This endpoint is used to change the user password, when user is logged in.
   "message": "Password has been successfully changed"
 }
 ```
+
+
 {% endtab %}
 
 {% tab title="404" %}
@@ -409,5 +411,34 @@ This endpoint is used to change the user password, when user is logged in.
     "message": "Invalid old password"
 }
 ```
+{% endtab %}
+{% endtabs %}
+
+
+
+## Logout
+
+<mark style="color:green;">`POST`</mark> `/logout`
+
+This endpoint is used to logged out the logged in user.
+
+**Headers**
+
+| Name         | Value              |
+| ------------ | ------------------ |
+| Content-Type | `application/json` |
+
+**Response**
+
+{% tabs %}
+{% tab title="200" %}
+```json
+{
+  "status": "success",
+  "message": "Logged out successfully"
+}
+```
+
+This will clear `accessToken` and `refreshToken` that are saved in cookies.
 {% endtab %}
 {% endtabs %}
