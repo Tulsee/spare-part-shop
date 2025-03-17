@@ -62,7 +62,7 @@ This endpoint is used to get all the detail data of logged in user
 
 ## Get User details by UserId
 
-<mark style="color:purple;">GET</mark> `/users/:userId`
+<mark style="color:purple;">GET</mark> `/:userId`
 
 **Authentication**:  **Protected Route** (only Super Admin and vendor can access)
 
@@ -179,7 +179,7 @@ This endpoint is used to get all the users detail.
 
 ## Update user profile
 
-<mark style="color:blue;">`PUT`</mark> `/users`
+<mark style="color:blue;">`PUT`</mark> `/update-profile`
 
 This endpoint is used to update user.
 
