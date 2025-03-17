@@ -334,9 +334,70 @@ If the user forget their password they get new opt by [`forgot-password`](authen
 {% tab title="200" %}
 ```json
 {
-  "id": 1,
-  "name": "John",
-  "age": 30
+  "status": "Success",
+  "message": "Password has been successfully reset."
+}
+```
+{% endtab %}
+
+{% tab title="404" %}
+```json
+{
+  "status": "error",
+  "message": "No user found with this email address"
+}
+```
+{% endtab %}
+
+{% tab title="400" %}
+```
+{
+  "status": "error",
+  "message": "Invalid OTP. Please try again"
+}
+```
+{% endtab %}
+{% endtabs %}
+
+
+
+## Change Password
+
+<mark style="color:green;">`POST`</mark> `/change-password`
+
+This endpoint is used to change the user password, when user is logged in.
+
+**Headers**
+
+| Name         | Value                                                                                               |
+| ------------ | --------------------------------------------------------------------------------------------------- |
+| Content-Type | `application/json`                                                                                  |
+| cookie       | <p><code>accessToken=your-access-token;</code><br><code>refreshToken=your-refresh-token;</code></p> |
+
+**Body**
+
+| Name            | Type   | Description                         |
+| --------------- | ------ | ----------------------------------- |
+| currentPassword | string | Old password                        |
+| newPassword     | string | New password that user want to have |
+
+**Response**
+
+{% tabs %}
+{% tab title="200" %}
+```json
+{
+  "status": "success",
+  "message": "Password has been successfully changed"
+}
+```
+{% endtab %}
+
+{% tab title="404" %}
+```json
+{
+  "status": "error",
+  "message": "No user Found"
 }
 ```
 {% endtab %}
@@ -344,7 +405,8 @@ If the user forget their password they get new opt by [`forgot-password`](authen
 {% tab title="400" %}
 ```json
 {
-  "error": "Invalid request"
+    "status": "error",
+    "message": "Invalid old password"
 }
 ```
 {% endtab %}
