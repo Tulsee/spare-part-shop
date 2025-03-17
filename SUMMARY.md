@@ -16,6 +16,7 @@
 * [Integrations](api-endpoints/integrations.md)
 * [Editor](api-endpoints/editor.md)
 * [🕵️ Authentication](api-endpoints/authentication.md)
+* [👨‍🦱 User](api-endpoints/user.md)
 
 ## Database
 
