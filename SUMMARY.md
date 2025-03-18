@@ -20,7 +20,18 @@
 
 ## Database
 
-* [Schema](database/schema.md)
+* [User Schema](database/user-schema.md)
+* [Vendor Schema](database/vendor-schema.md)
+* [Vehicles Category Schema](database/vehicles-category-schema.md)
+* [Category Schema](database/category-schema.md)
+* [Brand Schema](database/brand-schema.md)
+* [Product Schema](database/product-schema.md)
+* [Product Listing Schema](database/product-listing-schema.md)
+* [Cart Schema](database/cart-schema.md)
+* [Cart Item Schema](database/cart-item-schema.md)
+* [Order Schema](database/order-schema.md)
+* [Order Item Schema](database/order-item-schema.md)
+* [Payment Schema](database/payment-schema.md)
 
 ## Flow Chart
 
