@@ -2,8 +2,9 @@
 
 
 
-| Field Name | Data Types | Description    |
-| ---------- | ---------- | -------------- |
-| quantity   | Int        | Number of quan |
-|            |            |                |
-|            |            |                |
+| Field Name | Data Types | Description                                        |
+| ---------- | ---------- | -------------------------------------------------- |
+| quantity   | Int        | Number of product listing quantity that were order |
+| price      | Float      |                                                    |
+| order      | Order      |                                                    |
+|            |            |                                                    |
