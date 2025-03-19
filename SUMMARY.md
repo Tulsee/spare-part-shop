@@ -38,3 +38,4 @@
 * [User Authentication](flow-chart/user-authentication.md)
 * [Vendor System Flow](flow-chart/vendor-system-flow.md)
 * [User Sytem Flow](flow-chart/user-sytem-flow.md)
+* [Sequence Diagram](flow-chart/sequence-diagram.md)
